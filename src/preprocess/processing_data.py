@@ -31,7 +31,7 @@ def make_correlation(df):
     pt.print_correlation_matrix(df)
     return 1
 
-'''def apply_one_hot_encoder(df, to_encode):
+def apply_one_hot_encoder(df, to_encode):
 
     enc = OneHotEncoder()
     enc_data = pd.DataFrame(enc.fit_transform(
@@ -39,7 +39,7 @@ def make_correlation(df):
     df = df.join(enc_data)
     df.drop(to_encode, axis=1, inplace=True)
 
-    return df'''
+    return df
 
 def discard_columns(df, columns):
 
